@@ -286,6 +286,62 @@ main {
 }
 
 /* ========================================
+   Category Filter Bar
+   ======================================== */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+
+.filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text);
+  background: var(--color-surface-raised);
+}
+
+.filter-btn.active {
+  background: var(--color-accent-gradient);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgba(232, 149, 58, 0.25);
+}
+
+.recipe-count {
+  text-align: center;
+  color: var(--color-text-subtle);
+  font-size: 0.82rem;
+  margin-bottom: var(--space-xl);
+  letter-spacing: 0.02em;
+}
+
+.recipe-count strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ========================================
    Recipe Grid (Homepage)
    ======================================== */
 .recipe-grid {
@@ -605,6 +661,11 @@ footer {
 .recipe-card:nth-child(39) { animation-delay: 1.17s; }
 .recipe-card:nth-child(40) { animation-delay: 1.20s; }
 .recipe-card:nth-child(41) { animation-delay: 1.23s; }
+.recipe-card:nth-child(42) { animation-delay: 1.26s; }
+.recipe-card:nth-child(43) { animation-delay: 1.29s; }
+.recipe-card:nth-child(44) { animation-delay: 1.32s; }
+.recipe-card:nth-child(45) { animation-delay: 1.35s; }
+.recipe-card:nth-child(46) { animation-delay: 1.38s; }
 
 /* ========================================
    Recipe detail entrance

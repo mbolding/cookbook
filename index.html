@@ -15,49 +15,29 @@
   </header>
 
   <main>
-    <div class="recipe-grid">
-      <!-- Garlic Pasta -->
-      <article class="recipe-card" id="card-garlic-pasta">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍝</span>
-          <h2>Simple Garlic Pasta</h2>
-          <p>A classic Aglio e Olio that takes only 15 minutes to prepare.</p>
-          <a href="recipes/garlic-pasta.html">View Recipe &rarr;</a>
-        </div>
-      </article>
+    <!-- Category Filter Bar -->
+    <nav class="filter-bar" id="filter-bar" aria-label="Recipe categories">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="breakfast">🍳 Breakfast</button>
+      <button class="filter-btn" data-filter="pasta">🍝 Pasta &amp; Noodles</button>
+      <button class="filter-btn" data-filter="meat">🥩 Meat &amp; Poultry</button>
+      <button class="filter-btn" data-filter="seafood">🐟 Seafood</button>
+      <button class="filter-btn" data-filter="soups">🍲 Soups</button>
+      <button class="filter-btn" data-filter="salads">🥗 Salads &amp; Sides</button>
+      <button class="filter-btn" data-filter="vegetarian">🌿 Vegetarian</button>
+      <button class="filter-btn" data-filter="desserts">🍰 Baking &amp; Desserts</button>
+      <button class="filter-btn" data-filter="microwave">⚡ Microwave</button>
+    </nav>
 
-      <!-- Tomato Soup -->
-      <article class="recipe-card" id="card-tomato-soup">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍅</span>
-          <h2>Roasted Tomato Soup</h2>
-          <p>Rich and creamy soup made from slow-roasted tomatoes and garlic.</p>
-          <a href="recipes/tomato-soup.html">View Recipe &rarr;</a>
-        </div>
-      </article>
+    <!-- Recipe count indicator -->
+    <p class="recipe-count" id="recipe-count">Showing all <strong>46</strong> recipes</p>
 
-      <!-- Greek Salad -->
-      <article class="recipe-card" id="card-greek-salad">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🥗</span>
-          <h2>Classic Greek Salad</h2>
-          <p>Fresh and crisp salad with feta, olives, and Mediterranean flavors.</p>
-          <a href="recipes/greek-salad.html">View Recipe &rarr;</a>
-        </div>
-      </article>
+    <div class="recipe-grid" id="recipe-grid">
 
-      <!-- Lemon Salmon -->
-      <article class="recipe-card" id="card-lemon-salmon">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🐟</span>
-          <h2>Baked Lemon Salmon</h2>
-          <p>Healthy and bright salmon fillets baked with fresh lemon and herbs.</p>
-          <a href="recipes/lemon-salmon.html">View Recipe &rarr;</a>
-        </div>
-      </article>
+      <!-- ===================== BREAKFAST ===================== -->
 
       <!-- Omelette -->
-      <article class="recipe-card" id="card-omelette">
+      <article class="recipe-card" id="card-omelette" data-category="breakfast">
         <div class="recipe-card-content">
           <span class="card-emoji">🥚</span>
           <h2>Simple Omelette</h2>
@@ -66,18 +46,8 @@
         </div>
       </article>
 
-      <!-- Cookies -->
-      <article class="recipe-card" id="card-chocolate-cookies">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍪</span>
-          <h2>Chocolate Chip Cookies</h2>
-          <p>The ultimate soft and chewy chocolate chip cookies.</p>
-          <a href="recipes/chocolate-cookies.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
       <!-- Avocado Toast -->
-      <article class="recipe-card" id="card-avocado-toast">
+      <article class="recipe-card" id="card-avocado-toast" data-category="breakfast">
         <div class="recipe-card-content">
           <span class="card-emoji">🥑</span>
           <h2>Avocado Toast</h2>
@@ -86,118 +56,8 @@
         </div>
       </article>
 
-      <!-- Beef Stir-fry -->
-      <article class="recipe-card" id="card-beef-stir-fry">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🥩</span>
-          <h2>Beef &amp; Broccoli Stir-fry</h2>
-          <p>Savory beef and crisp broccoli in a rich soy-based sauce.</p>
-          <a href="recipes/beef-stir-fry.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Chicken Caesar -->
-      <article class="recipe-card" id="card-caesar-salad">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🥬</span>
-          <h2>Chicken Caesar Salad</h2>
-          <p>Hearty salad with grilled chicken, croutons, and creamy dressing.</p>
-          <a href="recipes/caesar-salad.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Mushroom Risotto -->
-      <article class="recipe-card" id="card-mushroom-risotto">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍄</span>
-          <h2>Mushroom Risotto</h2>
-          <p>Classic Italian dish packed with earthy mushroom flavor.</p>
-          <a href="recipes/mushroom-risotto.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Spicy Tuna Roll -->
-      <article class="recipe-card" id="card-tuna-roll">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍣</span>
-          <h2>Spicy Tuna Roll</h2>
-          <p>Tasty sushi roll with fresh tuna and a spicy mayo kick.</p>
-          <a href="recipes/tuna-roll.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Lentil Soup -->
-      <article class="recipe-card" id="card-lentil-soup">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍲</span>
-          <h2>Lentil &amp; Spinach Soup</h2>
-          <p>Nutritious and fiber-rich soup with aromatic spices.</p>
-          <a href="recipes/lentil-soup.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Blueberry Muffins -->
-      <article class="recipe-card" id="card-blueberry-muffins">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🫐</span>
-          <h2>Blueberry Muffins</h2>
-          <p>Moist and fluffy muffins filled with fresh blueberries.</p>
-          <a href="recipes/blueberry-muffins.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Caprese Skewers -->
-      <article class="recipe-card" id="card-caprese-skewers">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🧀</span>
-          <h2>Caprese Skewers</h2>
-          <p>Colorful appetizer with fresh mozzarella, tomatoes, and basil.</p>
-          <a href="recipes/caprese-skewers.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Roasted Potatoes -->
-      <article class="recipe-card" id="card-roasted-potatoes">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🥔</span>
-          <h2>Garlic Roasted Potatoes</h2>
-          <p>Crispy baby potatoes seasoned with garlic and fresh herbs.</p>
-          <a href="recipes/roasted-potatoes.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Apple Crisp -->
-      <article class="recipe-card" id="card-apple-crisp">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍎</span>
-          <h2>Apple Crisp</h2>
-          <p>Warm apples with a crunchy, buttery oat topping.</p>
-          <a href="recipes/apple-crisp.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Banana Bread -->
-      <article class="recipe-card" id="card-banana-bread">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍌</span>
-          <h2>Banana Bread</h2>
-          <p>Moist, tender loaf made from overripe bananas — a classic bake loved by all.</p>
-          <a href="recipes/banana-bread.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Chicken Tikka Masala -->
-      <article class="recipe-card" id="card-tikka-masala">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍛</span>
-          <h2>Chicken Tikka Masala</h2>
-          <p>Tender chicken in a rich, creamy tomato-spiced sauce — a restaurant favorite made at home.</p>
-          <a href="recipes/chicken-tikka-masala.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
       <!-- Fluffy Pancakes -->
-      <article class="recipe-card" id="card-pancakes">
+      <article class="recipe-card" id="card-pancakes" data-category="breakfast">
         <div class="recipe-card-content">
           <span class="card-emoji">🥞</span>
           <h2>Fluffy Pancakes</h2>
@@ -206,8 +66,40 @@
         </div>
       </article>
 
+      <!-- Shakshuka -->
+      <article class="recipe-card" id="card-shakshuka" data-category="breakfast">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍳</span>
+          <h2>Shakshuka</h2>
+          <p>Eggs poached in a spiced, smoky tomato sauce — perfect with crusty bread for dipping.</p>
+          <a href="recipes/shakshuka.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- French Crêpes -->
+      <article class="recipe-card" id="card-crepes" data-category="breakfast">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥞</span>
+          <h2>French Crêpes</h2>
+          <p>Paper-thin golden crêpes, sweet or savory. Fill with Nutella or ham and cheese.</p>
+          <a href="recipes/crepes.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== PASTA & NOODLES ===================== -->
+
+      <!-- Garlic Pasta -->
+      <article class="recipe-card" id="card-garlic-pasta" data-category="pasta">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍝</span>
+          <h2>Simple Garlic Pasta</h2>
+          <p>A classic Aglio e Olio that takes only 15 minutes to prepare.</p>
+          <a href="recipes/garlic-pasta.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
       <!-- Shrimp Scampi -->
-      <article class="recipe-card" id="card-shrimp-scampi">
+      <article class="recipe-card" id="card-shrimp-scampi" data-category="pasta">
         <div class="recipe-card-content">
           <span class="card-emoji">🦐</span>
           <h2>Shrimp Scampi</h2>
@@ -217,7 +109,7 @@
       </article>
 
       <!-- Pad Thai -->
-      <article class="recipe-card" id="card-pad-thai">
+      <article class="recipe-card" id="card-pad-thai" data-category="pasta">
         <div class="recipe-card-content">
           <span class="card-emoji">🍜</span>
           <h2>Pad Thai</h2>
@@ -226,28 +118,60 @@
         </div>
       </article>
 
-      <!-- French Onion Soup -->
-      <article class="recipe-card" id="card-french-onion-soup">
+      <!-- Basil Pesto Pasta -->
+      <article class="recipe-card" id="card-pesto-pasta" data-category="pasta">
         <div class="recipe-card-content">
-          <span class="card-emoji">🧅</span>
-          <h2>French Onion Soup</h2>
-          <p>Slow-caramelized onions in rich broth, topped with crusty bread and bubbling Gruyère.</p>
-          <a href="recipes/french-onion-soup.html">View Recipe &rarr;</a>
+          <span class="card-emoji">🌿</span>
+          <h2>Basil Pesto Pasta</h2>
+          <p>Vibrant homemade pesto with toasted pine nuts and Parmesan — summer in a bowl.</p>
+          <a href="recipes/pesto-pasta.html">View Recipe &rarr;</a>
         </div>
       </article>
 
-      <!-- Veggie Fried Rice -->
-      <article class="recipe-card" id="card-veggie-fried-rice">
+      <!-- Beef Bolognese -->
+      <article class="recipe-card" id="card-beef-bolognese" data-category="pasta">
         <div class="recipe-card-content">
-          <span class="card-emoji">🍚</span>
-          <h2>Vegetable Fried Rice</h2>
-          <p>Better-than-takeout fried rice loaded with colorful vegetables and sesame flavor.</p>
-          <a href="recipes/veggie-fried-rice.html">View Recipe &rarr;</a>
+          <span class="card-emoji">🍝</span>
+          <h2>Beef Bolognese</h2>
+          <p>Rich, slow-cooked Italian meat sauce simmered with wine and milk. Gets better with time.</p>
+          <a href="recipes/beef-bolognese.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Spicy Ramen -->
+      <article class="recipe-card" id="card-spicy-ramen" data-category="pasta">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍜</span>
+          <h2>Spicy Ramen</h2>
+          <p>Deeply savory miso-gochujang broth with springy noodles, soft-boiled egg, and pork.</p>
+          <a href="recipes/spicy-ramen.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== MEAT & POULTRY ===================== -->
+
+      <!-- Beef Stir-fry -->
+      <article class="recipe-card" id="card-beef-stir-fry" data-category="meat">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥩</span>
+          <h2>Beef &amp; Broccoli Stir-fry</h2>
+          <p>Savory beef and crisp broccoli in a rich soy-based sauce.</p>
+          <a href="recipes/beef-stir-fry.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Chicken Tikka Masala -->
+      <article class="recipe-card" id="card-tikka-masala" data-category="meat">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍛</span>
+          <h2>Chicken Tikka Masala</h2>
+          <p>Tender chicken in a rich, creamy tomato-spiced sauce — a restaurant favorite made at home.</p>
+          <a href="recipes/chicken-tikka-masala.html">View Recipe &rarr;</a>
         </div>
       </article>
 
       <!-- Beef Tacos -->
-      <article class="recipe-card" id="card-beef-tacos">
+      <article class="recipe-card" id="card-beef-tacos" data-category="meat">
         <div class="recipe-card-content">
           <span class="card-emoji">🌮</span>
           <h2>Street-Style Beef Tacos</h2>
@@ -257,7 +181,7 @@
       </article>
 
       <!-- Honey Garlic Chicken -->
-      <article class="recipe-card" id="card-honey-garlic-chicken">
+      <article class="recipe-card" id="card-honey-garlic-chicken" data-category="meat">
         <div class="recipe-card-content">
           <span class="card-emoji">🍗</span>
           <h2>Honey Garlic Chicken</h2>
@@ -266,38 +190,8 @@
         </div>
       </article>
 
-      <!-- Margherita Pizza -->
-      <article class="recipe-card" id="card-margherita-pizza">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍕</span>
-          <h2>Margherita Pizza</h2>
-          <p>Pillowy crust with San Marzano tomato sauce, fresh mozzarella, and fragrant basil.</p>
-          <a href="recipes/margherita-pizza.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Miso Soup -->
-      <article class="recipe-card" id="card-miso-soup">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🥣</span>
-          <h2>Miso Soup</h2>
-          <p>Silky dashi broth with umami-rich miso, soft tofu, and wakame. Gentle and nourishing.</p>
-          <a href="recipes/miso-soup.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Basil Pesto Pasta -->
-      <article class="recipe-card" id="card-pesto-pasta">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🌿</span>
-          <h2>Basil Pesto Pasta</h2>
-          <p>Vibrant homemade pesto with toasted pine nuts and Parmesan — summer in a bowl.</p>
-          <a href="recipes/pesto-pasta.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Pulled Pork -->
-      <article class="recipe-card" id="card-pulled-pork">
+      <!-- Slow Cooker Pulled Pork -->
+      <article class="recipe-card" id="card-pulled-pork" data-category="meat">
         <div class="recipe-card-content">
           <span class="card-emoji">🐖</span>
           <h2>Slow Cooker Pulled Pork</h2>
@@ -306,88 +200,8 @@
         </div>
       </article>
 
-      <!-- Shakshuka -->
-      <article class="recipe-card" id="card-shakshuka">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍳</span>
-          <h2>Shakshuka</h2>
-          <p>Eggs poached in a spiced, smoky tomato sauce — perfect with crusty bread for dipping.</p>
-          <a href="recipes/shakshuka.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Cinnamon Rolls -->
-      <article class="recipe-card" id="card-cinnamon-rolls">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🧁</span>
-          <h2>Cinnamon Rolls</h2>
-          <p>Soft, pillowy rolls swirled with cinnamon sugar and dripping with cream cheese icing.</p>
-          <a href="recipes/cinnamon-rolls.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Fish & Chips -->
-      <article class="recipe-card" id="card-fish-and-chips">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🐟</span>
-          <h2>Fish &amp; Chips</h2>
-          <p>Flaky white fish in crisp beer batter with thick-cut chips. The British pub classic.</p>
-          <a href="recipes/fish-and-chips.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Beef Bolognese -->
-      <article class="recipe-card" id="card-beef-bolognese">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍝</span>
-          <h2>Beef Bolognese</h2>
-          <p>Rich, slow-cooked Italian meat sauce simmered with wine and milk. Gets better with time.</p>
-          <a href="recipes/beef-bolognese.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Chicken Caesar Wrap -->
-      <article class="recipe-card" id="card-chicken-caesar-wrap">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🌯</span>
-          <h2>Chicken Caesar Wrap</h2>
-          <p>Crispy grilled chicken, romaine, Parmesan, and creamy Caesar dressing in a toasted tortilla.</p>
-          <a href="recipes/chicken-caesar-wrap.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Vegetable Curry -->
-      <article class="recipe-card" id="card-vegetable-curry">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🍛</span>
-          <h2>Golden Vegetable Curry</h2>
-          <p>Chickpeas, sweet potato, and spinach in a fragrant coconut milk sauce. Plant-based and hearty.</p>
-          <a href="recipes/vegetable-curry.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- French Crepes -->
-      <article class="recipe-card" id="card-crepes">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🥞</span>
-          <h2>French Crêpes</h2>
-          <p>Paper-thin golden crêpes, sweet or savory. Fill with Nutella or ham and cheese.</p>
-          <a href="recipes/crepes.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Teriyaki Salmon Bowl -->
-      <article class="recipe-card" id="card-teriyaki-salmon-bowl">
-        <div class="recipe-card-content">
-          <span class="card-emoji">🐠</span>
-          <h2>Teriyaki Salmon Bowl</h2>
-          <p>Glossy teriyaki-glazed salmon over rice with cucumber, edamame, and avocado.</p>
-          <a href="recipes/teriyaki-salmon-bowl.html">View Recipe &rarr;</a>
-        </div>
-      </article>
-
       <!-- Chili Con Carne -->
-      <article class="recipe-card" id="card-chili-con-carne">
+      <article class="recipe-card" id="card-chili-con-carne" data-category="meat">
         <div class="recipe-card-content">
           <span class="card-emoji">🌶️</span>
           <h2>Chili Con Carne</h2>
@@ -396,8 +210,238 @@
         </div>
       </article>
 
+      <!-- Chicken Caesar Wrap -->
+      <article class="recipe-card" id="card-chicken-caesar-wrap" data-category="meat">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🌯</span>
+          <h2>Chicken Caesar Wrap</h2>
+          <p>Crispy grilled chicken, romaine, Parmesan, and creamy Caesar dressing in a toasted tortilla.</p>
+          <a href="recipes/chicken-caesar-wrap.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== SEAFOOD ===================== -->
+
+      <!-- Baked Lemon Salmon -->
+      <article class="recipe-card" id="card-lemon-salmon" data-category="seafood">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🐟</span>
+          <h2>Baked Lemon Salmon</h2>
+          <p>Healthy and bright salmon fillets baked with fresh lemon and herbs.</p>
+          <a href="recipes/lemon-salmon.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Spicy Tuna Roll -->
+      <article class="recipe-card" id="card-tuna-roll" data-category="seafood">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍣</span>
+          <h2>Spicy Tuna Roll</h2>
+          <p>Tasty sushi roll with fresh tuna and a spicy mayo kick.</p>
+          <a href="recipes/tuna-roll.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Fish & Chips -->
+      <article class="recipe-card" id="card-fish-and-chips" data-category="seafood">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🐟</span>
+          <h2>Fish &amp; Chips</h2>
+          <p>Flaky white fish in crisp beer batter with thick-cut chips. The British pub classic.</p>
+          <a href="recipes/fish-and-chips.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Teriyaki Salmon Bowl -->
+      <article class="recipe-card" id="card-teriyaki-salmon-bowl" data-category="seafood">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🐠</span>
+          <h2>Teriyaki Salmon Bowl</h2>
+          <p>Glossy teriyaki-glazed salmon over rice with cucumber, edamame, and avocado.</p>
+          <a href="recipes/teriyaki-salmon-bowl.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== SOUPS ===================== -->
+
+      <!-- Roasted Tomato Soup -->
+      <article class="recipe-card" id="card-tomato-soup" data-category="soups">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍅</span>
+          <h2>Roasted Tomato Soup</h2>
+          <p>Rich and creamy soup made from slow-roasted tomatoes and garlic.</p>
+          <a href="recipes/tomato-soup.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Lentil Soup -->
+      <article class="recipe-card" id="card-lentil-soup" data-category="soups">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍲</span>
+          <h2>Lentil &amp; Spinach Soup</h2>
+          <p>Nutritious and fiber-rich soup with aromatic spices.</p>
+          <a href="recipes/lentil-soup.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- French Onion Soup -->
+      <article class="recipe-card" id="card-french-onion-soup" data-category="soups">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🧅</span>
+          <h2>French Onion Soup</h2>
+          <p>Slow-caramelized onions in rich broth, topped with crusty bread and bubbling Gruyère.</p>
+          <a href="recipes/french-onion-soup.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Miso Soup -->
+      <article class="recipe-card" id="card-miso-soup" data-category="soups">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥣</span>
+          <h2>Miso Soup</h2>
+          <p>Silky dashi broth with umami-rich miso, soft tofu, and wakame. Gentle and nourishing.</p>
+          <a href="recipes/miso-soup.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== SALADS & SIDES ===================== -->
+
+      <!-- Greek Salad -->
+      <article class="recipe-card" id="card-greek-salad" data-category="salads">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥗</span>
+          <h2>Classic Greek Salad</h2>
+          <p>Fresh and crisp salad with feta, olives, and Mediterranean flavors.</p>
+          <a href="recipes/greek-salad.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Caesar Salad -->
+      <article class="recipe-card" id="card-caesar-salad" data-category="salads">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥬</span>
+          <h2>Chicken Caesar Salad</h2>
+          <p>Hearty salad with grilled chicken, croutons, and creamy dressing.</p>
+          <a href="recipes/caesar-salad.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Caprese Skewers -->
+      <article class="recipe-card" id="card-caprese-skewers" data-category="salads">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🧀</span>
+          <h2>Caprese Skewers</h2>
+          <p>Colorful appetizer with fresh mozzarella, tomatoes, and basil.</p>
+          <a href="recipes/caprese-skewers.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Roasted Potatoes -->
+      <article class="recipe-card" id="card-roasted-potatoes" data-category="salads">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥔</span>
+          <h2>Garlic Roasted Potatoes</h2>
+          <p>Crispy baby potatoes seasoned with garlic and fresh herbs.</p>
+          <a href="recipes/roasted-potatoes.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== VEGETARIAN ===================== -->
+
+      <!-- Mushroom Risotto -->
+      <article class="recipe-card" id="card-mushroom-risotto" data-category="vegetarian">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍄</span>
+          <h2>Mushroom Risotto</h2>
+          <p>Classic Italian dish packed with earthy mushroom flavor.</p>
+          <a href="recipes/mushroom-risotto.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Veggie Fried Rice -->
+      <article class="recipe-card" id="card-veggie-fried-rice" data-category="vegetarian">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍚</span>
+          <h2>Vegetable Fried Rice</h2>
+          <p>Better-than-takeout fried rice loaded with colorful vegetables and sesame flavor.</p>
+          <a href="recipes/veggie-fried-rice.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Margherita Pizza -->
+      <article class="recipe-card" id="card-margherita-pizza" data-category="vegetarian">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍕</span>
+          <h2>Margherita Pizza</h2>
+          <p>Pillowy crust with San Marzano tomato sauce, fresh mozzarella, and fragrant basil.</p>
+          <a href="recipes/margherita-pizza.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Golden Vegetable Curry -->
+      <article class="recipe-card" id="card-vegetable-curry" data-category="vegetarian">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍛</span>
+          <h2>Golden Vegetable Curry</h2>
+          <p>Chickpeas, sweet potato, and spinach in a fragrant coconut milk sauce. Plant-based and hearty.</p>
+          <a href="recipes/vegetable-curry.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== BAKING & DESSERTS ===================== -->
+
+      <!-- Chocolate Chip Cookies -->
+      <article class="recipe-card" id="card-chocolate-cookies" data-category="desserts">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍪</span>
+          <h2>Chocolate Chip Cookies</h2>
+          <p>The ultimate soft and chewy chocolate chip cookies.</p>
+          <a href="recipes/chocolate-cookies.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Blueberry Muffins -->
+      <article class="recipe-card" id="card-blueberry-muffins" data-category="desserts">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🫐</span>
+          <h2>Blueberry Muffins</h2>
+          <p>Moist and fluffy muffins filled with fresh blueberries.</p>
+          <a href="recipes/blueberry-muffins.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Apple Crisp -->
+      <article class="recipe-card" id="card-apple-crisp" data-category="desserts">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍎</span>
+          <h2>Apple Crisp</h2>
+          <p>Warm apples with a crunchy, buttery oat topping.</p>
+          <a href="recipes/apple-crisp.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Banana Bread -->
+      <article class="recipe-card" id="card-banana-bread" data-category="desserts">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍌</span>
+          <h2>Banana Bread</h2>
+          <p>Moist, tender loaf made from overripe bananas — a classic bake loved by all.</p>
+          <a href="recipes/banana-bread.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Cinnamon Rolls -->
+      <article class="recipe-card" id="card-cinnamon-rolls" data-category="desserts">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🧁</span>
+          <h2>Cinnamon Rolls</h2>
+          <p>Soft, pillowy rolls swirled with cinnamon sugar and dripping with cream cheese icing.</p>
+          <a href="recipes/cinnamon-rolls.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
       <!-- Classic Cheesecake -->
-      <article class="recipe-card" id="card-cheesecake">
+      <article class="recipe-card" id="card-cheesecake" data-category="desserts">
         <div class="recipe-card-content">
           <span class="card-emoji">🍰</span>
           <h2>Classic Cheesecake</h2>
@@ -406,13 +450,65 @@
         </div>
       </article>
 
-      <!-- Spicy Ramen -->
-      <article class="recipe-card" id="card-spicy-ramen">
+      <!-- ===================== MICROWAVE ===================== -->
+
+      <!-- Microwave Mug Cake -->
+      <article class="recipe-card" id="card-mug-cake" data-category="microwave">
         <div class="recipe-card-content">
-          <span class="card-emoji">🍜</span>
-          <h2>Spicy Ramen</h2>
-          <p>Deeply savory miso-gochujang broth with springy noodles, soft-boiled egg, and pork.</p>
-          <a href="recipes/spicy-ramen.html">View Recipe &rarr;</a>
+          <span class="card-emoji">☕</span>
+          <h2>Microwave Mug Cake</h2>
+          <p>Warm, fluffy chocolate cake made in a mug in under five minutes. Dangerously easy.</p>
+          <a href="recipes/mug-cake.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Microwave Mac & Cheese -->
+      <article class="recipe-card" id="card-microwave-mac-cheese" data-category="microwave">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🧀</span>
+          <h2>Microwave Mac &amp; Cheese</h2>
+          <p>Creamy, single-serve mac and cheese — no stove, no box. Just real cheese and pasta.</p>
+          <a href="recipes/microwave-mac-cheese.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Microwave Scrambled Eggs -->
+      <article class="recipe-card" id="card-microwave-scrambled-eggs" data-category="microwave">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥚</span>
+          <h2>Microwave Scrambled Eggs</h2>
+          <p>Impossibly fluffy scrambled eggs in under three minutes with zero pans to wash.</p>
+          <a href="recipes/microwave-scrambled-eggs.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Microwave Baked Potato -->
+      <article class="recipe-card" id="card-microwave-baked-potato" data-category="microwave">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥔</span>
+          <h2>Microwave Baked Potato</h2>
+          <p>Fluffy baked potato in under ten minutes. Load it up with all your favorite toppings.</p>
+          <a href="recipes/microwave-baked-potato.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Microwave Mug Brownie -->
+      <article class="recipe-card" id="card-mug-brownie" data-category="microwave">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍫</span>
+          <h2>Microwave Mug Brownie</h2>
+          <p>Dense, fudgy, intensely chocolatey — a single-serve brownie in under five minutes.</p>
+          <a href="recipes/mug-brownie.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Microwave Loaded Nachos -->
+      <article class="recipe-card" id="card-microwave-nachos" data-category="microwave">
+        <div class="recipe-card-content">
+          <span class="card-emoji">🌮</span>
+          <h2>Microwave Loaded Nachos</h2>
+          <p>Crunchy chips buried under melted cheese, jalapeños, and all the fixings. Ready in minutes.</p>
+          <a href="recipes/microwave-nachos.html">View Recipe &rarr;</a>
         </div>
       </article>
     </div>
@@ -421,5 +517,7 @@
   <footer>
     <p>&copy; 2026 My Static Cookbook. All rights reserved.</p>
   </footer>
+
+  <script src="assets/js/filter.js"></script>
 </body>
 </html>

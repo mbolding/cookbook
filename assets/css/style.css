@@ -375,6 +375,37 @@ main {
   border-bottom: 1px solid var(--color-border);
 }
 
+.recipe-card-emoji-container {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-raised);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.recipe-card-emoji-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, var(--color-warm-soft), transparent 70%);
+  opacity: 0.5;
+}
+
+.recipe-card-emoji {
+  position: relative;
+  z-index: 1;
+  transition: transform var(--transition-normal);
+}
+
+.recipe-card:hover .recipe-card-emoji {
+  transform: scale(1.15) translateY(-5px);
+}
+
 /* Top accent bar */
 .recipe-card::before {
   content: '';
@@ -476,6 +507,41 @@ main {
   height: 400px;
   object-fit: cover;
   border-bottom: 1px solid var(--color-border);
+}
+
+.recipe-hero-emoji-container {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-raised);
+  background: radial-gradient(circle at center, var(--color-warm-soft) 0%, var(--color-surface-raised) 100%);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.recipe-hero-emoji-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 30c0-16.569 13.431-30 30-30v60c-16.569 0-30-13.431-30-30zM0 30C0 13.431 13.431 0 30 0v60C13.431 60 0 46.569 0 30z' fill='%23d4802e' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: 80px;
+}
+
+.recipe-hero-emoji {
+  display: block;
+  font-size: 8rem;
+  line-height: 1;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+  z-index: 1;
+  transition: transform var(--transition-slow);
+}
+
+.recipe-detail:hover .recipe-hero-emoji {
+  transform: scale(1.05) rotate(2deg);
 }
 
 .recipe-detail-content {
@@ -597,7 +663,19 @@ footer {
   }
 
   .recipe-detail {
+    padding: 0; /* Remove padding here so hero emoji can be full-width */
+  }
+
+  .recipe-detail-content {
     padding: var(--space-lg);
+  }
+
+  .recipe-hero-emoji-container {
+    height: 200px;
+  }
+
+  .recipe-hero-emoji {
+    font-size: 5rem;
   }
 
   .recipe-meta {
@@ -722,6 +800,30 @@ footer {
    Focus states for accessibility
    ======================================== */
 a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ========================================
+   Scrollbar styling
+   ======================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-raised);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-hover);
+}
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: 3px;

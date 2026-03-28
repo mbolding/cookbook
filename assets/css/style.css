@@ -596,6 +596,15 @@ footer {
 .recipe-card:nth-child(30) { animation-delay: 0.90s; }
 .recipe-card:nth-child(31) { animation-delay: 0.93s; }
 .recipe-card:nth-child(32) { animation-delay: 0.96s; }
+.recipe-card:nth-child(33) { animation-delay: 0.99s; }
+.recipe-card:nth-child(34) { animation-delay: 1.02s; }
+.recipe-card:nth-child(35) { animation-delay: 1.05s; }
+.recipe-card:nth-child(36) { animation-delay: 1.08s; }
+.recipe-card:nth-child(37) { animation-delay: 1.11s; }
+.recipe-card:nth-child(38) { animation-delay: 1.14s; }
+.recipe-card:nth-child(39) { animation-delay: 1.17s; }
+.recipe-card:nth-child(40) { animation-delay: 1.20s; }
+.recipe-card:nth-child(41) { animation-delay: 1.23s; }
 
 /* ========================================
    Recipe detail entrance

@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A curated collection of handmade recipes — from quick weeknight dinners to weekend baking projects.">
+  <meta name="theme-color" content="#d4802e">
   <title>The Static Cookbook</title>
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/theme.js"></script>
 </head>
@@ -29,6 +31,8 @@
       <button class="filter-btn" data-filter="microwave">⚡ Microwave</button>
       <button class="filter-btn" data-filter="hobbit">🧙 Hobbit Fare</button>
       <button class="filter-btn" data-filter="vancian">🏛️ Vancian Fare</button>
+      <button class="filter-btn" data-filter="elven">🍃 Elven Fare</button>
+      <button class="filter-btn" data-filter="dwarven">⛏️ Dwarven Delights</button>
     </nav>
 
     <!-- Recipe count indicator -->
@@ -40,6 +44,7 @@
 
       <!-- Omelette -->
       <article class="recipe-card" id="card-omelette" data-category="breakfast">
+        <!-- <img src="assets/images/recipes/omelette.jpg" alt="Simple Omelette" class="recipe-card-image"> -->
         <div class="recipe-card-content">
           <span class="card-emoji">🥚</span>
           <h2>Simple Omelette</h2>
@@ -151,6 +156,17 @@
       </article>
 
       <!-- ===================== MEAT & POULTRY ===================== -->
+
+      <!-- Thai Green Curry -->
+      <article class="recipe-card" id="card-green-curry" data-category="meat">
+        <!-- <img src="assets/images/recipes/green-curry.jpg" alt="Thai Green Curry" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍲</span>
+          <h2>Thai Green Curry</h2>
+          <p>Fragrant chicken curry with coconut milk, green chilies, and Thai basil.</p>
+          <a href="recipes/green-curry.html">View Recipe &rarr;</a>
+        </div>
+      </article>
 
       <!-- Beef Stir-fry -->
       <article class="recipe-card" id="card-beef-stir-fry" data-category="meat">
@@ -637,13 +653,108 @@
           <a href="recipes/rosewater-panna-cotta.html">View Recipe &rarr;</a>
         </div>
       </article>
+
+      <!-- ===================== ELVEN FARE ===================== -->
+
+      <!-- Lembas Bread -->
+      <article class="recipe-card" id="card-lembas-bread" data-category="elven">
+        <!-- <img src="assets/images/recipes/lembas-bread.jpg" alt="Lembas Bread" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍃</span>
+          <h2>Lembas Bread</h2>
+          <p>The iconic Elven waybread, crisp and golden. One bite sustains a traveler for days.</p>
+          <a href="recipes/lembas-bread.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Miruvor -->
+      <article class="recipe-card" id="card-miruvor" data-category="elven">
+        <!-- <img src="assets/images/recipes/miruvor.jpg" alt="Miruvor" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍯</span>
+          <h2>Miruvor (Elven Cordial)</h2>
+          <p>A revitalizing nectar of elderflower and honey. Renews the strength of the weary.</p>
+          <a href="recipes/miruvor.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Wild Woodland Salad -->
+      <article class="recipe-card" id="card-woodland-salad" data-category="elven">
+        <!-- <img src="assets/images/recipes/woodland-salad.jpg" alt="Wild Woodland Salad" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥗</span>
+          <h2>Wild Woodland Salad</h2>
+          <p>Fresh greens, forest berries, and pine nuts with a blackberry vinaigrette.</p>
+          <a href="recipes/woodland-salad.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Honey-Thyme Rainbow Trout -->
+      <article class="recipe-card" id="card-rainbow-trout" data-category="elven">
+        <!-- <img src="assets/images/recipes/rainbow-trout.jpg" alt="Honey-Thyme Rainbow Trout" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🐟</span>
+          <h2>Honey-Thyme Rainbow Trout</h2>
+          <p>Stream-fresh trout roasted with wild thyme and a sweet honey glaze.</p>
+          <a href="recipes/rainbow-trout.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- ===================== DWARVEN DELIGHTS ===================== -->
+
+      <!-- Dwarven Cram -->
+      <article class="recipe-card" id="card-dwarven-cram" data-category="dwarven">
+        <!-- <img src="assets/images/recipes/dwarven-cram.jpg" alt="Dwarven Cram" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">⛏️</span>
+          <h2>Dwarven Cram</h2>
+          <p>Dense, long-lasting travel bread for the deepest subterranean journeys.</p>
+          <a href="recipes/dwarven-cram.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Mountain Boar Roast -->
+      <article class="recipe-card" id="card-boar-roast" data-category="dwarven">
+        <!-- <img src="assets/images/recipes/boar-roast.jpg" alt="Mountain Boar Roast" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🍖</span>
+          <h2>Mountain Boar Roast</h2>
+          <p>Massive, salt-crusted roast with crackling skin. A Great Hall favorite.</p>
+          <a href="recipes/boar-roast.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Moria Mushroom Pasty -->
+      <article class="recipe-card" id="card-mushroom-pasty" data-category="dwarven">
+        <!-- <img src="assets/images/recipes/mushroom-pasty.jpg" alt="Moria Mushroom Pasty" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥧</span>
+          <h2>Moria Mushroom Pasty</h2>
+          <p>Hand-pies filled with earthy cave-mushrooms and rich dark ale.</p>
+          <a href="recipes/mushroom-pasty.html">View Recipe &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Stone-Hearth Root Mash -->
+      <article class="recipe-card" id="card-root-mash" data-category="dwarven">
+        <!-- <img src="assets/images/recipes/root-mash.jpg" alt="Stone-Hearth Root Mash" class="recipe-card-image"> -->
+        <div class="recipe-card-content">
+          <span class="card-emoji">🥔</span>
+          <h2>Stone-Hearth Root Mash</h2>
+          <p>A thick, buttery mash of parsnips, turnips, and potatoes.</p>
+          <a href="recipes/root-mash.html">View Recipe &rarr;</a>
+        </div>
+      </article>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 My Static Cookbook. All rights reserved.</p>
+    <p>&copy; 2026 The Hearth & Harvest. All rights reserved.</p>
   </footer>
 
   <script src="assets/js/filter.js"></script>
 </body>
 </html>
+</body>
+</html>
+l>

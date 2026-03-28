@@ -1,0 +1,17 @@
+{
+  "name": "The Hearth & Harvest",
+  "short_name": "Hearth&Harvest",
+  "description": "A curated collection of handmade recipes, offline-ready.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#faf7f4",
+  "theme_color": "#d4802e",
+  "icons": [
+    {
+      "src": "assets/images/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
